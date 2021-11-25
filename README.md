@@ -1,24 +1,12 @@
-# Data Encryption Standard Algorithm (DES)
+A basic implementation of the famous **Data Encryption Standard** algorithm (DES) in C. This implementation was written for educational purpose and is NOT meant to be used in real applications.
 
-- An implementation of the famous DES encryption algorithm in C.
-- Files:
-      - des.c, tables.h, Makefile
-
-- COMPILE:
-    $ make clean; make
-
-- USAGE:
-
-  	$ ./des.out [mode] [input_file] [output_file]
-
-- MODES:
- 
-  	e for encryption
-
-	  d for decryption
-
-- USAGE EXAMPLES:
-
-	  $ ./des.out e plain.txt cipher.txt
-	
-	  $ ./des.out d cipher.txt orig.txt
+Usage:
+===========
+- Compile as `$ make clean && make`
+- Run as `$ ./des.out [mode] [input_file] [output_file]`
+- Available modes:
+  - `e` for encryption
+  - `d` for decryption
+- Usage examples:
+  - Encryption: `$ ./des.out e plain.txt cipher.txt`
+  - Decreption: `$ ./des.out d cipher.txt orig.txt`
